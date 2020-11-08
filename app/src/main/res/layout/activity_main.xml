@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   style="@style/layoutStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/myStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/height"
+        android:text="Height"
+
+        />
+    <TextView
+        android:id="@+id/text2"
+        style="@style/myStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+
+        android:layout_toLeftOf="@+id/name"
+        android:text="Name"
+         />
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/editTextStyle"
+
+        android:layout_alignParentRight="true"
+
+
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/height"
+        style="@style/editTextStyle"
+
+        android:layout_below="@id/text2"
+
+        android:layout_alignParentEnd="true"
+
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/text4"
+        style="@style/myStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/weight"
+        android:text="weight" />
+
+    <EditText
+        android:id="@+id/weight"
+        style="@style/editTextStyle"
+
+        android:layout_below="@id/text3"
+        android:layout_alignParentEnd="true"
+        android:inputType="numberDecimal"
+
+        />
+
+    <TextView
+        android:id="@+id/text5"
+        style="@style/myStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/gender"
+        android:text="gender" />
+
+    <Spinner
+        android:id="@+id/gender"
+        style="@style/editTextStyle"
+        android:layout_below="@id/text4"
+        android:layout_alignParentEnd="true"></Spinner>
+
+    <TextView
+        android:id="@+id/bmi"
+        style="@style/BMIStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text5"
+        android:layout_alignParentLeft="true"
+      >
+
+    </TextView>
+
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/save"
+
+        android:layout_below="@+id/bmi"
+        android:layout_alignParentLeft="true"
+        android:onClick="onClickSave"
+        android:text="Save"
+
+        ></Button>
+
+    <Button
+        style="@style/buttonStyle"
+        android:id="@+id/timer"
+
+        android:layout_below="@+id/save"
+        android:layout_alignParentLeft="true"
+
+        android:onClick="onClickTimer"
+        android:text="Timer"></Button>
+
+</RelativeLayout>
